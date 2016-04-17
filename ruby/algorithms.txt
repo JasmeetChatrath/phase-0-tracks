@@ -1,0 +1,37 @@
+##Robot taking elevator
+for each robot:
+  -face elevator
+  -wait until doors open completely
+-once doors open:
+  -scan for other people or robots
+    -if clear
+      move forward until 6 inches from wall and turn around
+    -else
+      move 6 inches to right
+        -if clear
+        move forward until 6 inches from wall and turn around
+        -else
+        move 6 inches to left and move forward until 6 inches from wall and turn around
+-if ask "Which floor?"
+  -request floor number you wish to go to
+-else
+  push button to floor you wish to go to
+-when you arrive to your floor if disired floor buton light turns off and doors open move forward until you pass elevator doors
+
+##Eating banana
+For each banana
+-pick up banana by base
+-with other hand grip top of banana
+  -pull down until peel reaches bottom hand
+  -move to top of banana
+  -move 1 cm right
+  -grip top of peel
+  -repeat lines 25-28 until banana has no peel
+-remove hand from top of banana
+  -open mouth
+  -move top 1.5 inches of banana into mouth
+  -bit into banana
+  -chew 5 times
+  -swollow banana
+  -repeat lines 31-35 until base of banana is reached
+
