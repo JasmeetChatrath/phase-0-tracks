@@ -1,0 +1,31 @@
+##Variables
+1.  Variables are use to declare variables.  A programmer uses this because it allows them to manipulate code and create programs.
+2.  If we entered:
+    first_name = "Abraham"
+    last_name = "Lincoln"
+    full_name = first_name + last_name
+ruby would run it from the top down, on line at a time.  The final result would be
+    "AbrahamLincoln"
+although it wouldn't print to the console unless we added a command to do so.
+##Date Types
+3.
+*string: A string is anything we put between "".  Ex: dog = "Yogi"
+*integer:  An integer is a number not in ""s.  If we have string we'd like to use as an integer we use .to_i.  Ex: 4
+*Float:  A float is an integer with a decimal point.  Ex: 4.3
+*nil:  Nil is another way of saying nothing in ruby.
+*boolean:  A boolean can be true or false.  Ex: 3 > 4 would be false.
+##Algorithms
+4.  An algorithm tell our interpreter step by step what we'd like it to do so it executes our command.
+5.  Common algorithms in computer science are loops and comparators.
+##Methods
+6.  A method is a reusable section of code. A programmer would use this to save time.
+8. Global scope means we can access said portion of code from anywhere in the code.  Method scope means we can access it only within that method.
+##Control Flow
+9.  Control flow is the order in which individual cide us called.  This give the programmer more control and options.
+10.
+*loop:  A loop repeats a section of code until a condition is met
+*if: this say if so and so condition is present proceed to the following step
+*else: else is the alternative option in our if statement
+*elsif: this is used when we want to add additonal options besides if and else
+*while: this says while this condition takes place do the following
+*until: this tells out while loop when to break
