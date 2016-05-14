@@ -13,17 +13,24 @@ def employee_survey
     puts "Would you like to enroll in the company's health insurance?"
     insurance = gets.chomp
 correct_age = "26"
+end
 
-puts "List your allergies?"
-allergy_list = Array.new
-allergies = nil
-while allergies != "done" || "sunshinse" do
+puts "List your allergies:"
+while true
   allergies = gets.chomp
-  allergy_list <<  allergies
-  break allergies == "done"
+  allergy_list = Array.new
+  allergy_list << allergies
+  if allergies == "sunshine"
+    puts "Probably a vampire."
+    break
+  end
+  if allergies == "done"
+    break
+  end
 end
 puts allergy_list
 
+while true
     if age == correct_age && (garlic == "yes" || insurance == "yes")
       puts "Probably not a vampire."
     elsif age != correct_age && (garlic == "no" || insurance == "no")
@@ -36,7 +43,9 @@ puts allergy_list
       print "Results inconclusive."
     end
     employee_count += 1
-    break employee_count == employees
+    if employee_count == employees
+      break
+    end
     prints "Actually, never mind!  What do these questions have to do with anything?  Let's all be friends."
 end
 
