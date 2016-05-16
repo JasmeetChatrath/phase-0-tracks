@@ -1,0 +1,53 @@
+##Data Structures
+1. Why are data structures useful in programming?
+Data structures provide a building block for us to manipulate.  It allows us to store information, organize data, nest code, and so mcuh more.
+
+##Arrays
+2. Define "array" and describe the characteristics of an array.
+An array is a list of information stored in [].  An array can be called using it's index and can be nested (multidemensional array).
+
+3. Give two original examples of data sets that an array might be well-suited for.
+family_names = ["Bob", "Cinday", "Yogi", "Britney", "Kevin"]
+food_choices = ["hotdog", "sandwich", "pizza", "burrito", "taco"]
+
+##Hashes
+4. Define "hash" and describe the characteristics of a hash.
+A hash is a set of key-value pairs.  A value can be called by using the hash_name[key_value].
+
+5. Give two original examples of data sets that a hash might be well-suited for.
+food_prices = {
+  "pizza" => 2,
+  "taco" => 2
+  "burrito" => 4
+  "hotdog" => 3
+}
+
+grades = {
+  "Kelly" => 98,
+  "Bob" => 75,
+  "Britney" => 88,
+  "Tom" => 93
+}
+
+##Iteration
+6. Why is iteration useful?
+Iteration is useful because it allows us to loop through a set of code the required amount of times until a condition is met.  This makes the possibilities in coding infinite and allows us to accomplish very specific tasks.
+
+7. Give an example of a real-life task that would require iteration if you wrote an algorithm for it.
+A real life example would be buying enough oranges until we have on for each family member.
+Ex:
+    family_members = ["Bob", "Cindy", "Kevin"]
+    orange_count = 0
+    while orange_count < family_members.length
+    puts "Buy orange"
+    orange_count += 1
+    end
+
+##Blocks
+8. What is a block?
+A block is a section of code using a do and end statement or burly braces {}.
+
+9. What is a block parameter, and where does its value come from?
+A block's parameter is set but the programmer.
+Ex:
+    [1, 2, 3].each {|x| puts x * 3}
