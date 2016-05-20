@@ -56,9 +56,12 @@ while true
   spin = gets.chomp.to_i
 
   dance2 = Dance.new(dancers_name, dance_style)
-  p dance2.sway_hips
-  p dance2.kick(kick)
-  p dance2.spin(spin)
   dances << dance2
 end
-p dances
+
+dances.each do |instance|
+  p "Our instance values are:  "
+  p instance.sway_hips
+  p instance.kick(kick)
+  p instance.spin(spin)
+end
