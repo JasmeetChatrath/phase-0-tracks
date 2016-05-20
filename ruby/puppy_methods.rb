@@ -1,5 +1,8 @@
-class Puppy
 
+class Puppy
+  def initialize
+    puts "Initializing new puppy instance..."
+  end
   def fetch(toy)
     puts "I brought back the #{toy}!"
     toy
@@ -16,14 +19,12 @@ class Puppy
   def play_dead
     puts "*plays dead*"
   end
-  def initialize
-    puts "Initializing new puppy instance..."
-  end
 end
 
-Puppy.new.fetch("frisby")
-Puppy.new.speak(3)
-Puppy.new.roll_over
-Puppy.new.dog_years(26)
-Puppy.new.play_dead
-#continue working on initialize
+yogi = Puppy.new
+yogi.fetch("frisby")
+yogi.speak(3)
+yogi.roll_over
+yogi.dog_years(26)
+yogi.play_dead
+
