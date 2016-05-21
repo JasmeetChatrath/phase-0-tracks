@@ -1,3 +1,4 @@
+=begin
 list_of_names = []
 while true
 
@@ -48,4 +49,5 @@ list_of_names.each do |name|
   puts "#{original_name}'s name is #{name}."
 end
 
-#the original_name doesn't reassign to the new input when looped.  Look into how to fix that.
+=end
+
