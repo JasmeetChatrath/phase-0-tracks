@@ -5,11 +5,15 @@ iterate backwards through each string and print until we reach the length of our
 call our function with an arguement
 */
 
-var reverse = function(string) {
-  for (var i = string.length; i < 0; i--) {
-    console.log(i);
-  }
+function reverse(string) {
+  var newString = '';
+  for (var i = string.length - 1; i >= 0; i--)
+    newString += string[i];
+  return newString;
 };
 
-var newString = reverse("hello");
-console.log(newString);
+var reverseString= reverse('hello');
+if (5 > 4) {
+  console.log(reverseString);
+}
+
