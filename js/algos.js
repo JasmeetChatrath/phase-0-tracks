@@ -29,6 +29,29 @@ function keyMatch(obj1, obj2) {
     }
 }
 
+
+function test(length){
+  var array = [];
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+  if (length != 0) {
+    for (var i=0; i < length; i++){
+      word = "";
+      for (var a=0; a < range(1,10); a++){
+        word += alphabet[range(0,26)];
+      }
+      array.push(word);
+    }
+  }
+  return array;
+}
+function range(min, max){
+  return Math.floor(Math.random() *(max) + (min));
+}
+
+
 longestPhrase(["Linda", "Bob", "Tim"]);
 //keyMatch({name: "Tamir", age: 54}, {name: "Tamir", age: 54});
+
+
 
