@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>9.3 Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jquery.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id='title'>9.3 Website</h1>
+    <h2>Click the puppy to play!</h2>
+  </header>
+  <figure>
+    <img id = 'puppy' src = "http://ghk.h-cdn.co/assets/16/09/980x490/landscape-1457107485-gettyimages-512366437.jpg">
+  </figure>
+  <script>
+  $(document).ready(function(){
+    $('puppy').animate({'top': '100px'}, 1000);
+    setTimeout(function(){
+      $('puppy').animate({'top': '0px'}, 1000);
+    }, 1000)
+    setTimeout(function(){
+      $('puppy').animate({'top': '100px'}, 1000);
+    }, 2000)
+    setTimeout(function(){
+      $('puppy').animate({'top': '0px'}, 1000);
+    }, 3000)
+    setTimeout(function(){
+      $('puppy').animate({'top': '100px'}, 1000);
+    }, 4000)
+   })
+  </script>
+</body>
+</html>
